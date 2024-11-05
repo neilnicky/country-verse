@@ -1,0 +1,6 @@
+name = "countryverse"
+compatibility_date = "2024-10-10" 
+
+[vars]
+UPSTASH_REDIS_REST_URL = "https://fine-snail-24215.upstash.io"
+UPSTASH_REDIS_REST_TOKEN = "AV6XAAIjcDFiOTI5YzIzZjhiZWY0ZDIxODM0ZTE1ZGI3M2EzZmU3YXAxMA"
