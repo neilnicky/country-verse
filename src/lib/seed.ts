@@ -1,3 +1,4 @@
+
 import { Redis } from "@upstash/redis";
 
 const redis = new Redis({
@@ -267,7 +268,7 @@ countryList.forEach((country) => {
   terms.push({ score: 0, member: term + "*" });
 
   const populateDb = async () => {
-    // @ts-expect-error
+    // @ts-expect-error dasdasd
     await redis.zadd("terms", ...terms);
   };
   populateDb();
