@@ -9,6 +9,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -36,11 +37,12 @@ export default function Home() {
   }, [input]);
 
   return (
-    <main className="h-screen w-screen">
+    <main className="h-screen  w-screen relative ">
       <GridBackground/>
-      <div className="flex flex-col gap-6 items-center pt-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
-        <h1 className="text-5xl tracking-tight font-bold">SpeedSearch ⚡</h1>
-        <p className="text-zinc-600 text-lg max-w-prose text-center">
+      <Link href="https://github.com/neilnicky" className="text-xl tracking-tight font-medium text-zinc-800 absolute  top-6 left-6 animate-pulse duration-1000 hover:animate-bounce hover:duration-500 cursor-pointer">CountryVerse</Link>
+      <div className="flex  flex-col gap-6 items-center pt-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
+        <h2 className="text-5xl tracking-tight font-bold">SpeedSearch ⚡</h2>
+        <p className="text-zinc-600 text-lg max-w-prose text-center  ">
           A high-performance API built with Hono, Next.js and Cloudflare. <br />{" "}
           Type a query below and get your results in miliseconds.
         </p>
