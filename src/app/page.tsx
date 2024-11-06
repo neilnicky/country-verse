@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import GridBackground from "@/components/GridBackground";
 import {
   Command,
@@ -39,7 +40,7 @@ export default function Home() {
   return (
     <main className="h-screen  w-screen relative ">
       <GridBackground/>
-      <Link href="https://github.com/neilnicky" className="text-xl tracking-tight font-medium text-zinc-800 absolute  top-6 left-6 animate-pulse duration-1000 hover:animate-bounce hover:duration-500 cursor-pointer">CountryVerse</Link>
+      <Link href={"/"} className="text-xl tracking-tight font-medium text-zinc-800 absolute  top-6 left-6 animate-pulse duration-1000 hover:animate-bounce hover:duration-500 cursor-pointer">CountryVerse</Link>
       <div className="flex  flex-col gap-6 items-center pt-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
         <h2 className="text-5xl tracking-tight font-bold">SpeedSearch ⚡</h2>
         <p className="text-zinc-600 text-lg max-w-prose text-center  ">
@@ -88,6 +89,7 @@ export default function Home() {
           </Command>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
