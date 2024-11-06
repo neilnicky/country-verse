@@ -40,15 +40,15 @@ export default function Home() {
   return (
     <main className="h-screen  w-screen relative ">
       <GridBackground/>
-      <Link href={"/"} className="text-xl tracking-tight font-medium text-zinc-800 absolute  top-6 left-6 animate-pulse duration-1000 hover:animate-bounce hover:duration-500 cursor-pointer">CountryVerse</Link>
+      <Link href={"/"} className="text-xl tracking-tight font-medium max-sm:text-sm text-zinc-800 absolute  top-6 left-6 animate-pulse duration-1000 hover:animate-bounce hover:duration-500 cursor-pointer">CountryVerse</Link>
       <div className="flex  flex-col gap-6 items-center pt-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
-        <h2 className="text-5xl tracking-tight font-bold">SpeedSearch ⚡</h2>
-        <p className="text-zinc-600 text-lg max-w-prose text-center  ">
+        <h2 className="text-5xl tracking-tight font-bold max-sm:text-3xl">SpeedSearch ⚡</h2>
+        <p className="text-zinc-600 text-lg max-w-prose text-center max-sm:text-sm ">
           A high-performance API built with Hono, Next.js and Cloudflare. <br />{" "}
           Type a query below and get your results in miliseconds.
         </p>
 
-        <div className="max-w-md w-full shadow-sm ">
+        <div className="max-w-md w-full shadow-md max-sm:w-[80%] max-sm:shadow-2xl ">
           <Command>
             <CommandInput
               value={input}
